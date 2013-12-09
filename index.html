@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Suche in der Wikipedia-Enzyklopaedie</title>
+
+<style type="text/css">
+body {
+	background-image:url(biblio.jpg);
+	background-attachment: fixed;
+	color: #003366;
+	margin: auto;
+}
+
+#big {
+	text-align: center;
+	background-color: #CCD6B8;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1.5em;
+	width: 40em;
+	padding: 2em;
+	font-family: Verdana,sans-serif;
+}
+
+h1 {
+	font-size: 1.2em;
+}
+
+fieldset {
+	padding: 3em;
+}
+
+ul {
+	text-align: left;
+	font-size: 0.9em;
+}
+label{
+	font-size:0.8em;
+}
+input{
+	font-family: Verdana;
+	color: #003366;
+	font-size: 0.9em;	
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+#searchText,#searchTitle{
+	display:block;
+}
+#footer{
+	font-size:0.7em;
+	list-style-type: none;
+	text-align:center;
+}
+a:visited{
+	color:#010101;
+}
+</style>
+</head>
+
+<body>	
+	<div id="big">
+		<h1>Mit diesen Suchfeldern koennen Sie die freie Enzyklopaedie Wikipedia durchsuchen:</h1>
+		<form id="search" action="http://de.wikipedia.org/wiki/Spezial:Suche">
+			<fieldset>
+				<legend><strong>Titelsuche</strong></legend>
+				<label for="searchTitle">Sie koennen einen oder mehrere Begriffe eingeben: </label>
+				<input id="searchTitle" type="text" name="search" size="54" value=""/><br/>	
+				<input id="goTitle" type="submit" name="go" value="Durchsuchen" />		
+				<input id ="resetTitle" type="reset" name="reset" value="Eingabefeld leeren"/>			
+				<input class="index" type="button" value="Zur Wikipedia-Startseite gehen" onclick="location.assign('http://de.wikipedia.org/wiki/Wikipedia:Hauptseite')"/>
+			</fieldset>
+		</form>
+		<form action="http://de.wikipedia.org/wiki/Spezial:Suche">
+			<fieldset>
+				<legend>
+					<strong>Volltextsuche</strong>
+				</legend>
+				<label for="searchText">Sie koennen einen oder mehrere Begriffe eingeben:</label>
+				<input id="searchText" type="text" name="search"  size="54" value=""/><br/>
+				<input id="goText" type="submit" name="fulltext" value="Durchsuchen" />
+				<input id="resetText" type="reset" name="reset" value="Eingabefeld leeren"/>
+				<input class="index" type="button" value="Zur Wikipedia-Startseite gehen" onclick="location.assign('http://de.wikipedia.org/wiki/Wikipedia:Hauptseite')"/>
+			</fieldset>
+			<ul>
+				<li>Die Suche unterscheidet nicht zwischen Gross- und Kleinschreibung.</li>
+				<li>Wenn die Titelsuche erfolglos war, versuchen Sie es mit der Volltextsuche.</li>
+				<li>Die Volltextsuche zeigt Ihnen alle Seiten, die die gesuchten Begriffe beinhalten.</li>
+				<li>Wenn Ihnen die genaue Schreibweise nicht bekannt ist, tippen Sie in das Suchfeld Ihren Suchbegriff und das Tilde-Zeichen (~) ein.</li>
+			</ul>
+		</form>
+		<a href='http://wave.webaim.org/report#/https://eluni3form.cloudcontrolled.com/'>
+		<img src="wcag2AAA.gif" alt="WCAG-Logo"/>
+		</a>
+		<ul id="footer">
+			<li>Foto: Juhan Sonin, "Last of the color coding". Quelle: <a href="http://piqs.de">piqs.de</a></li>
+			<li><a href="http://creativecommons.org/licenses/by/2.0/de/deed.de">Some rights reserved</a></li>
+		</ul>
+	</div>
+</body>
+</html>
